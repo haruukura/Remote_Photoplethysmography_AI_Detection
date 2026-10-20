@@ -218,3 +218,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# project
+SampleVideos/
+data/
+*.task
+*.mp4
+*.avi
+*.mov
+check_output.png
+.DS_Store
