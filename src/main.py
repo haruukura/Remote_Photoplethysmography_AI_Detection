@@ -11,12 +11,12 @@ while video.isOpened():
     if not active:
         print("Video read error (Steam end?)...")
         break
-    gray = cv.cvtColor(frame, cv.COLOR_BRR2GRAY)
+    gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
 
     cv.imshow('frame',gray)
 
     if cv.waitKey(1) == ord('q'):
         break
 
-video.realease()
-cv.destoryAllWindows
+video.release()
+cv.destroyAllWindows
