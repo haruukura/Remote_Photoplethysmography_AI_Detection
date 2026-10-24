@@ -3,7 +3,9 @@ Inspired by the fakecatcher project by Dr. Umur Ciftci and Ilke Demir, Using tin
 
 # To run:
 python3.11 -m venv .venv
+
 source .venv/bin/activate
+
 pip install -r requirements.txt
 
 Data:
