@@ -9,7 +9,11 @@ cascadeFileName = "data/haarcascade_frontalface_default.xml"
 video = cv.VideoCapture(videoName)
 
 cv.CascadeClassifier(cascadeFileName)
-print(face_cascade.empty())
+
+
+
+
+
 
 while video.isOpened():
     active, frame  = video.read()
@@ -19,7 +23,8 @@ while video.isOpened():
         print("Video read error (Steam end?)...")
         break
 
-    #gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
+
+    gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
 
     cv.imshow('frame',frame)
 
