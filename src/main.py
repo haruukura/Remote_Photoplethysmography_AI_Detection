@@ -25,7 +25,9 @@ while video.isOpened():
 
 
     gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
+    faces = face_cascade.detectMultiscale(gray, scaleFactor = 1, minNeighboors = 5)
 
+    print(faces)
     cv.imshow('frame',frame)
 
 
