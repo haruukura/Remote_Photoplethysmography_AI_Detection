@@ -8,7 +8,7 @@ cascadeFileName = "data/haarcascade_frontalface_default.xml"
 
 video = cv.VideoCapture(videoName)
 
-cv.CascadeClassifier(cascadeFileName)
+face_cascade = cv.CascadeClassifier(cascadeFileName)
 
 
 
@@ -25,7 +25,7 @@ while video.isOpened():
 
 
     gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
-    faces = face_cascade.detectMultiscale(gray, scaleFactor = 1, minNeighboors = 5)
+    faces = face_cascade.detectMultiScale(gray, scaleFactor = 1.1, minNeighbors = 5)
 
     print(faces)
     cv.imshow('frame',frame)
@@ -36,4 +36,4 @@ while video.isOpened():
         break
 
 video.release()
-cv.destroyAllWindows
+cv.destroyAllWindows()
