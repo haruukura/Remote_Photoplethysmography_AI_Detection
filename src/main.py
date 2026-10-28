@@ -34,7 +34,7 @@ while video.isOpened():
     #Exit press 'q'
     if cv.waitKey(1) == ord('q'):
         break
-    if cv.waitKey(1) == ord('esc'):
-        break
+    #if cv.waitKey(1) == ord('esc'):
+    #    break
 video.release()
 cv.destroyAllWindows()
