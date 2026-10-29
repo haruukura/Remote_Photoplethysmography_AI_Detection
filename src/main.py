@@ -27,6 +27,13 @@ while video.isOpened():
     gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
     faces = face_cascade.detectMultiScale(gray, scaleFactor = 1.1, minNeighbors = 5)
 
+    for (x,y,w,h) in faces:
+        startPoint = (x,y)
+        endPoint = (x+w, y+h)
+        green = (0,255,0)
+        cv.rectangle(frame, startPoint, endPoint, green, 2)
+
+
     print(faces)
     cv.imshow('frame',frame)
 
