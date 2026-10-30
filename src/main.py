@@ -34,7 +34,7 @@ while video.isOpened():
         endPoint = (x+w, y+h)
         green = (0,255,0)
         cv.rectangle(frame, startPoint, endPoint, green, 2)
-        features.
+        features.pop
 
 
     print(faces)
