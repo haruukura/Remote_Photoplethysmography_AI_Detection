@@ -1,3 +1,5 @@
+from pyexpat import features
+
 import numpy as np
 import cv2 as cv
 
@@ -32,6 +34,7 @@ while video.isOpened():
         endPoint = (x+w, y+h)
         green = (0,255,0)
         cv.rectangle(frame, startPoint, endPoint, green, 2)
+        features.
 
 
     print(faces)
