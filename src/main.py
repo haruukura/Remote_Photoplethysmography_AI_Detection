@@ -37,6 +37,8 @@ while video.isOpened():
         features.pop
 
 
+
+
     print(faces)
     cv.imshow('frame',frame)
 
