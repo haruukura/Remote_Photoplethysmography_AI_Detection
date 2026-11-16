@@ -48,5 +48,7 @@ while video.isOpened():
         break
     #if cv.waitKey(1) == ord('esc'):
     #    break
+    #
+    #
 video.release()
 cv.destroyAllWindows()
